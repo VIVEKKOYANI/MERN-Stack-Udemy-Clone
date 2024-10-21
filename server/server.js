@@ -21,6 +21,8 @@ mongoose
   .then(() => console.log("Mongodb is connected"))
   .catch((e) => console.log(e));
 
+// route configuration
+
 app.use((err, req, res, next) => {
   console.log(err.stack);
   res.status(500).json({
